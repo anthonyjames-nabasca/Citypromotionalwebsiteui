@@ -1,0 +1,90 @@
+@import './fonts.css';
+@import './tailwind.css';
+@import './theme.css';
+
+/* Slick Carousel Custom Styles */
+.carousel-container .slick-dots {
+  bottom: -40px;
+}
+
+.carousel-container .slick-dots li button:before {
+  font-size: 12px;
+  color: #0A5C4F;
+  opacity: 0.4;
+}
+
+.carousel-container .slick-dots li.slick-active button:before {
+  color: #0891B2;
+  opacity: 1;
+}
+
+.carousel-container .slick-prev,
+.carousel-container .slick-next {
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+}
+
+.carousel-container .slick-prev:before,
+.carousel-container .slick-next:before {
+  font-size: 40px;
+  color: #0A5C4F;
+  opacity: 0.7;
+}
+
+.carousel-container .slick-prev:hover:before,
+.carousel-container .slick-next:hover:before {
+  opacity: 1;
+}
+
+.carousel-container .slick-prev {
+  left: -50px;
+}
+
+.carousel-container .slick-next {
+  right: -50px;
+}
+
+@media (max-width: 768px) {
+  .carousel-container .slick-prev {
+    left: -25px;
+  }
+  
+  .carousel-container .slick-next {
+    right: -25px;
+  }
+  
+  .carousel-container .slick-prev,
+  .carousel-container .slick-next {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .carousel-container .slick-prev:before,
+  .carousel-container .slick-next:before {
+    font-size: 30px;
+  }
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F5E6D3;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #0A5C4F 0%, #0891B2 100%);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #1A7A5E 0%, #0E7490 100%);
+}
